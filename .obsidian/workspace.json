@@ -1,0 +1,242 @@
+{
+  "main": {
+    "id": "f127d926189dd098",
+    "type": "split",
+    "children": [
+      {
+        "id": "b8d4419ace45a3aa",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "e775744ed8478f33",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "NPS_AI_Fellowship/Onboarding/The Commander's AI Smartcard.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "The Commander's AI Smartcard"
+            }
+          },
+          {
+            "id": "b9d410ce42c0b1e1",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "NPS_AI_Fellowship/Onboarding/Understanding AI Technology.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Understanding AI Technology"
+            }
+          },
+          {
+            "id": "370dd121a038dfc6",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "NPS_AI_Fellowship/Onboarding/Can Warfighters Remain the Masters of AI.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Can Warfighters Remain the Masters of AI"
+            }
+          },
+          {
+            "id": "951fcc8b09e4c1fe",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "NPS_AI_Fellowship/Onboarding/AI Foundations Course.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "AI Foundations Course"
+            }
+          }
+        ],
+        "currentTab": 3
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "86226ad62a488e63",
+    "type": "split",
+    "children": [
+      {
+        "id": "22bf56f84998d910",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "ca1ef12463ed25cf",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "eefbef6c40645ddf",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "fc4328697bfc6282",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 200,
+    "collapsed": true
+  },
+  "right": {
+    "id": "90b481091638d053",
+    "type": "split",
+    "children": [
+      {
+        "id": "e5e9b2e61fd3f91b",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "5edd3172c4f2191a",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "NPS_AI_Fellowship/Onboarding/AI Foundations Course.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks for AI Foundations Course"
+            }
+          },
+          {
+            "id": "d1dca32cac972a8c",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "NPS_AI_Fellowship/Onboarding/AI Foundations Course.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links from AI Foundations Course"
+            }
+          },
+          {
+            "id": "f6654b75bdc8e62a",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "e76ecec64a01cea1",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-archive",
+              "title": "All properties"
+            }
+          },
+          {
+            "id": "f0009368268b68b0",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "NPS_AI_Fellowship/Onboarding/AI Foundations Course.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Outline of AI Foundations Course"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "bases:Create new base": false,
+      "obsidian-excalidraw-plugin:New drawing": false
+    }
+  },
+  "active": "951fcc8b09e4c1fe",
+  "lastOpenFiles": [
+    "NPS_AI_Fellowship/Onboarding/Can Warfighters Remain the Masters of AI.md",
+    "NPS_AI_Fellowship/Onboarding/AI Foundations Course.md",
+    "NPS_AI_Fellowship/Onboarding/Understanding AI Technology.md",
+    "NPS_AI_Fellowship/Onboarding/The Commander's AI Smartcard.md",
+    "NPS_AI_Fellowship/Onboarding",
+    "Untitled 1",
+    "NPS_AI_Fellowship/Ontology and Theorem Proving",
+    "NPS_AI_Fellowship"
+  ]
+}
