@@ -4,67 +4,20 @@
     "type": "split",
     "children": [
       {
-        "id": "b8d4419ace45a3aa",
+        "id": "1b944eb6b42ad458",
         "type": "tabs",
         "children": [
           {
-            "id": "e775744ed8478f33",
+            "id": "12101928384c475d",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "NPS_AI_Fellowship/Onboarding/The Commander's AI Smartcard.md",
-                "mode": "source",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "The Commander's AI Smartcard"
-            }
-          },
-          {
-            "id": "b9d410ce42c0b1e1",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "NPS_AI_Fellowship/Onboarding/Understanding AI Technology.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Understanding AI Technology"
-            }
-          },
-          {
-            "id": "370dd121a038dfc6",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "NPS_AI_Fellowship/Onboarding/Can Warfighters Remain the Masters of AI.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Can Warfighters Remain the Masters of AI"
-            }
-          },
-          {
-            "id": "951fcc8b09e4c1fe",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "NPS_AI_Fellowship/Onboarding/AI Foundations Course.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "AI Foundations Course"
+              "title": "New tab"
             }
           }
-        ],
-        "currentTab": 3
+        ]
       }
     ],
     "direction": "vertical"
@@ -121,8 +74,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 301.5
   },
   "right": {
     "id": "90b481091638d053",
@@ -138,7 +90,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "NPS_AI_Fellowship/Onboarding/AI Foundations Course.md",
+                "file": "What is Semantics.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -148,7 +100,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for AI Foundations Course"
+              "title": "Backlinks for What is Semantics"
             }
           },
           {
@@ -157,12 +109,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "NPS_AI_Fellowship/Onboarding/AI Foundations Course.md",
+                "file": "What is Semantics.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from AI Foundations Course"
+              "title": "Outgoing links from What is Semantics"
             }
           },
           {
@@ -200,13 +152,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "NPS_AI_Fellowship/Onboarding/AI Foundations Course.md",
+                "file": "What is Semantics.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of AI Foundations Course"
+              "title": "Outline of What is Semantics"
             }
           }
         ]
@@ -228,10 +180,28 @@
       "obsidian-excalidraw-plugin:New drawing": false
     }
   },
-  "active": "951fcc8b09e4c1fe",
+  "active": "12101928384c475d",
   "lastOpenFiles": [
-    "NPS_AI_Fellowship/Onboarding/Can Warfighters Remain the Masters of AI.md",
+    "Excalidraw/Drawing 2025-12-14 15.05.49.excalidraw.md",
+    "NPS_AI_Fellowship/Ontology and Theorem Proving/1.5 Types and Type Definitions in SUMO.md",
+    "Excalidraw/Drawing 2025-12-14 15.10.21.excalidraw.md",
+    "NPS_AI_Fellowship/Ontology and Theorem Proving/1.4 Formal Ontology and the Suggested Upper Merged Ontology (SUMO).md",
+    "NPS_AI_Fellowship/Ontology and Theorem Proving/Pasted image 20251214120919.png",
+    "NPS_AI_Fellowship/Ontology and Theorem Proving/Pasted image 20251213145528.png",
+    "NPS_AI_Fellowship/Ontology and Theorem Proving/Pasted image 20251213134624.png",
+    "NPS_AI_Fellowship/Ontology and Theorem Proving/Pasted image 20251213134813.png",
+    "NPS_AI_Fellowship/Ontology and Theorem Proving/Pasted image 20251214113540.png",
+    "NPS_AI_Fellowship/Ontology and Theorem Proving/Pasted image 20251214120844.png",
+    "NPS_AI_Fellowship/Ontology and Theorem Proving/1.2 What is Semantics.md",
+    "NPS_AI_Fellowship/Ontology and Theorem Proving/1.3 Taming Digital Volatility.md",
+    "NPS_AI_Fellowship/Ontology and Theorem Proving/Pasted image 20251214113430.png",
+    "NPS_AI_Fellowship/Ontology and Theorem Proving/Pasted image 20251214111623.png",
+    "NPS_AI_Fellowship/Ontology and Theorem Proving/Pasted image 20251213154236.png",
+    "NPS_AI_Fellowship/Ontology and Theorem Proving/1.1 What is Ontology.md",
+    "Excalidraw/PartsofPuzzle.excalidraw.md",
+    "Excalidraw",
     "NPS_AI_Fellowship/Onboarding/AI Foundations Course.md",
+    "NPS_AI_Fellowship/Onboarding/Can Warfighters Remain the Masters of AI.md",
     "NPS_AI_Fellowship/Onboarding/Understanding AI Technology.md",
     "NPS_AI_Fellowship/Onboarding/The Commander's AI Smartcard.md",
     "NPS_AI_Fellowship/Onboarding",

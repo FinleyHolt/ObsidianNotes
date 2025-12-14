@@ -8,7 +8,11 @@
 * Narrow AI replicate human intelligence on specific tasks or in a limited environment
 * Machine learning is a family of algorithms that perform tasks without needing the algorithm to be explicitly programmed by a human. Instead, the decisions of the algorithm are governed by rules that are data driven.
 * 3 main types: supervised, unsupervised, reinforcement
+#### Supervised Machine Learning
 
+* Good for when you have large amounts of labeled data that precisely represents what you want to learn.
+* Classification - find a decision boundary IOT predict discrete class labels
+* Regression - find a "best fit" function IOTT predict continuous valueshat *
 ### Lecture 2: Data Requirements and Conditioning
 
 ### Lecture 3: Introduction to Deep Learning
