@@ -1,0 +1,66 @@
+---
+title: "Ontology Course Notes"
+author: "Finley Holt"
+date: today
+format:
+  pdf:
+    documentclass: article
+    geometry:
+      - margin=1in
+    fontsize: 11pt
+    number-sections: true
+    toc: false
+    include-in-header:
+      text: |
+        \usepackage{fancyhdr}
+        \pagestyle{fancy}
+        \fancyhf{}
+        \fancyhead[L]{\textit{Ontology Course Notes}}
+        \fancyhead[R]{\thepage}
+        \renewcommand{\headrulewidth}{0.4pt}
+---
+
+## SUMOjEdit
+
+### Problem Statement
+
+* Write statements in logic
+* An expressive logic (a HOL) so visual/graph editing not possible
+* Big library of theories so remembering/checking types and signatures are important
+* Need to make it easier for newcomers to write correct code
+* Primarily use automated theorem proving, but using them like interactive theorem provers can be helpful
+
+### Theory Library
+
+**Suggested Upper Merged Ontology (SUMO)**
+
+* Started in year 2000, open source
+* 20,000 terms, 80,000 statements
+* Dozens of domain ontologies
+* Mapped to GlobalWordNet for NLP applications
+
+### Sigma Knowledge Engineering Environment
+
+* Co-evolved with SUMO since inception
+* Browsing, error checking
+* Translation from SUMO into TPTP, TF0, THF
+* Interface to E from Vampire and SystemOnTPTP
+* Reused for SUMOjEdit
+
+### Editor Features
+
+* Color coding — logical operators, fundamental relations, docs
+* Errors and warnings
+* Formatting
+* Open browser
+* Go to definition
+* Theorem proving
+
+### Theorem Proving Interface
+
+* Highlight any statement
+* Converted to TPTP
+* Sent to E or Vampire
+* Proof converted back to SUO-KIF/SUMO
+
+![Theorem proving interface](./TheoremProvingInterface.png){#fig-tp width=70%}

@@ -1,0 +1,6 @@
+### Synonyms and Ontology
+
+ * synonomousExternalConcept
+ * subsumingExternalConcept
+ * subsumedExternalConcept
+ 

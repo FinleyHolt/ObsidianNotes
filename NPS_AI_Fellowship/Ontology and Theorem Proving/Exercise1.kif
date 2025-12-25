@@ -1,0 +1,30 @@
+; ============================================
+; Exercise 1: SUO-KIF Representations
+; Finley Holt
+; December 20, 2025
+; ============================================
+
+; Mary is a woman
+
+(instance Mary Woman)
+
+; All men are mortal
+
+(forall (?M)
+    (=>
+        (instance ?M Man)
+        (attribute ?M Mortal)))
+        
+; Some men are plumbers
+
+(exists (?M)
+    (and
+        (instance ?M Man)
+        (attribute ?M Plumber)))
+        
+; Rachael is the editor of a newspaper
+
+(and
+    (instance Rachael Human)
+    (attribute Rachael Editor)
+    (editor Rachael Newspaper))

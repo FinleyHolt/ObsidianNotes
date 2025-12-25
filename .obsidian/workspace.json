@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "1b944eb6b42ad458",
+        "id": "9b86eaa01de09095",
         "type": "tabs",
         "children": [
           {
-            "id": "12101928384c475d",
+            "id": "e8d6f3653950fe2f",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -180,8 +180,10 @@
       "obsidian-excalidraw-plugin:New drawing": false
     }
   },
-  "active": "12101928384c475d",
+  "active": "e8d6f3653950fe2f",
   "lastOpenFiles": [
+    "NPS_AI_Fellowship/Onboarding/AI Foundations Course.md",
+    "2.2_Paraphrasing_Logic.excalidraw",
     "Excalidraw/Drawing 2025-12-14 15.05.49.excalidraw.md",
     "NPS_AI_Fellowship/Ontology and Theorem Proving/1.5 Types and Type Definitions in SUMO.md",
     "Excalidraw/Drawing 2025-12-14 15.10.21.excalidraw.md",
@@ -200,7 +202,6 @@
     "NPS_AI_Fellowship/Ontology and Theorem Proving/1.1 What is Ontology.md",
     "Excalidraw/PartsofPuzzle.excalidraw.md",
     "Excalidraw",
-    "NPS_AI_Fellowship/Onboarding/AI Foundations Course.md",
     "NPS_AI_Fellowship/Onboarding/Can Warfighters Remain the Masters of AI.md",
     "NPS_AI_Fellowship/Onboarding/Understanding AI Technology.md",
     "NPS_AI_Fellowship/Onboarding/The Commander's AI Smartcard.md",

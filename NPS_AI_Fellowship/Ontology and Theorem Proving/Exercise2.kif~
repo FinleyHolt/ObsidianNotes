@@ -1,0 +1,323 @@
+;; ============================================
+;; Exercise 2 Language to Logic
+;; Finley Holt
+;; December 21, 2025
+;; ============================================
+
+;; Some people like broccoli
+
+(exists (?P)
+    (and
+        (instance ?P Human)
+        (wants ?P Broccoli)))
+;; I couldn't find likes as a term so wants was the closest
+;; I could find, is that the rigth way to go about things?
+
+;; All people that like broccoli hate ice cream
+
+(forall (?P)
+    (=>
+        (and
+            (instance ?P Human)
+            (wants ?P Broccoli))
+        (dislikes ?P IceCream)))
+
+;; Bill has a dog
+
+(instance Bill Human)
+(exists (?D)
+    (and
+        (instance ?D Dog)
+        (possesses Bill ?D)))
+
+;; Dogs that lick Bill like Jane
+
+(instance Bill Human)
+(instance Jane Human)
+(forall (?D)
+    (=>
+        (and
+            (instance ?D Dog)
+            (exists (?L)
+                (and
+                    (instance ?L Licking)
+                    (agent ?L ?D)
+                    (patient ?L Bill))))
+        (wants ?D Jane)))
+
+;; If someone likes dogs he or she likes some vegetable
+
+(forall (?P)
+    (=>
+        (and
+            (instance ?P Human)
+            (exists (?D)
+                (and
+                    (instance ?D Dog)
+                    (wants ?P ?D))))
+        (exists (?V)
+            (and
+                (instance ?V Vegetable)
+                (wants ?P ?V)))))
+
+;; People who are sad or lonely like dogs
+
+(forall (?P)
+    (=>
+        (and
+            (instance ?P Human)
+            (or
+                (attribute ?P Unhappiness)
+                (attribute ?P Alone)))
+        (wants ?P Dog)))
+
+;; Everyone who eats broccoli likes a dog or a cat
+
+(forall (?P)
+    (=>
+        (and
+            (instance ?P Human)
+            (exists (?E)
+                (and
+                    (instance ?E Eating)
+                    (agent ?E ?P)
+                    (patient ?E Broccoli))))
+        (or
+            (wants ?P Dog)
+            (wants ?P Cat))))
+
+;; People who like dogs or cats hate mice
+
+(forall (?P)
+    (=>
+        (and
+            (instance ?P Human)
+            (or
+                (wants ?P Dog)
+                (wants ?P Cat)))
+        (dislikes ?P Mouse)))
+
+;; If it is raining I take my umbrella
+
+(instance Me Human)
+(=>
+    (exists (?R)
+        (instance ?R Raining))
+    (exists (?C ?U)
+        (and
+            (instance ?C Carrying)
+            (instance ?U Umbrella)
+            (agent ?C Me)
+            (patient ?C ?U))))
+
+;; Anyone who has an umbrella is not wet
+
+(forall (?P)
+    (=>
+        (and
+            (instance ?P Human)
+            (exists (?U ?C)
+                (and
+                    (instance ?U Umbrella)
+                    (instance ?C Carrying)
+                    (agent ?C ?P)
+                    (patient ?C ?U))))
+        (not (attribute ?P Wet))))
+
+;; Gorillas are primates
+
+(subclass Gorilla Primate)
+
+;; Bill's father is Sue's father too
+
+(instance Bill Human)
+(instance Sue Human)
+(exists (?F)
+    (and
+        (parent Bill ?F)
+        (parent Sue ?F)
+        (attribute ?F Male)))
+    
+
+;; Bill knows someone who likes broccoli
+
+(instance Bill Human)
+(exists (?P)
+    (and
+        (acquaintance Bill ?P)
+        (wants ?P Broccoli)))
+
+;; Any person who has a dog doesn't have a cat
+
+(forall (?P)
+    (=>
+        (and
+            (instance ?P Human)
+            (exists (?D)
+                (and
+                    (instance ?D Dog)
+                    (possesses ?P ?D))))
+        (not
+            (exists (?C)
+                (and
+                    (instance ?C Cat)
+                    (possesses ?P ?C))))))
+
+;; No one eats broccoli
+
+(not 
+    (exists (?P)
+        (and
+            (instance ?P Human)
+            (consumes ?P Broccoli))))
+
+;; Someone really likes broccoli
+
+(exists (?P)
+    (and
+        (instance ?P Human)
+        (wants ?P Broccoli))) ; How do we express intensity?
+
+;; If the moon is made of green cheese I'll be a monkey's uncle
+
+(instance I Human)
+(=>
+    (material Cheese Moon)
+    (exists (?M)
+        (and
+            (instance ?M Monkey)
+            (uncle I ?M))))
+
+;; If wishes were horses the beggars would ride
+
+(=>
+    (and
+        (forall (?W)
+            (and
+                (instance ?W Wish)
+                (instance ?W Horse)
+    (and
+        (forall (?B)
+            (and
+                (instance ?B Human)
+                (occupation ?B Beggar)
+    (and
+        (instance ?D Driving)
+        (agent ?D ?W)))))))))
+
+;; Tables have four legs
+
+(forall (?T)
+    (=>
+        (instance ?T Table)
+        (exists (?LEGS)
+            (and
+                (instance ?LEGS Collection)
+                (memberCount ?LEGS 4)
+                (forall (?L)
+                    (=>
+                        (member ?L ?LEGS)
+                        (component ?L ?T)))))))
+
+;; Lawyers practice law
+
+(forall (?L)
+    (=>
+        (and
+            (instance ?L Human)
+            (attribute ?L Lawyer))
+        (exists (?W)
+            (and
+                (instance ?W Working)
+                (agent ?W ?L)))))
+
+;; John gave an apple to Susan
+
+(instance John Human)
+(instance Susan Human)
+(instance Apple1 Apple)
+(instance Giving1 Giving)
+(origin Giving1 John)
+(destination Giving1 Susan)
+(patient Giving1 Apple1)
+
+;; Tenured professors have published many papers
+
+(forall (?T)
+    (=>
+        (and
+            (instance ?T Human)
+            (attribute ?T Professor)
+            (attribute ?T Tenured))
+        (exists (?P)
+            (and
+                (instance ?P Collection)
+                (forall (?PAPER)
+                    (=>
+                        (member ?PAPER ?P)
+                        (instance ?PAPER Article)))
+                (authors ?T ?P)
+                (greaterThan (CardinalityFn ?P) 5)))))
+
+;; Mary has two feet
+
+(instance Mary Human)
+(exists (?F1 ?F2)
+    (and
+        (instance ?F1 Foot)
+        (instance ?F2 Foot)
+        (part ?F1 Mary)
+        (part ?F2 Mary)
+        (not (equal ?F1 ?F2))))
+
+;; Bill biked to the store on Tuesday
+
+(instance Bill Human)
+(instance Bicycle1 Bicycle)
+(instance Driving1 Driving)
+(instance Store1 Store)
+(agent Driving1 Bill)
+(patient Driving1 Bicycle1)
+(destination Driving1 Store1)
+(instance Tuesday1 Tuesday)
+(during (WhenFn Driving1) (WhenFn Tuesday1))
+
+;; When it's cold I wear a coat or a hat or both
+
+(instance Weather1 WeatherProcess)
+(attribute Weather1 ColdTemperature)
+(instance Myself Human)
+(instance Hat1 Hat)
+(instance Coat1 Coat)
+(holdsDuring (WhenFn Weather1)
+    (or
+        (wears Myself Coat1)
+        (wears Myself Hat1)))
+
+;; Only staff have access to this computer
+
+(instance Computer1 Computer)
+(forall (?P ?ACTION)
+    (=>
+        (and
+            (instance ?ACTION UserAction)
+            (patient ?ACTION Computer1)
+            (agent ?ACTION ?P))
+        (attribute ?P Staff)))
+
+;; Access to campus is only for faculty, staff, students and people with a visitor's pass 
+
+(instance Campus Region)
+(forall (?P)
+    (=>
+        (and
+            (instance ?P Human)
+            (located ?P Campus))
+        (or
+            (attribute ?P Faculty)
+            (attribute ?P Staff)
+            (attribute ?P Student)
+            (exists (?PASS)
+                (and
+                    (instance ?PASS Certificate)
+                    (possesses ?P ?PASS))))))
